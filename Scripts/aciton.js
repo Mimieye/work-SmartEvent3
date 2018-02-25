@@ -124,12 +124,4 @@
     if (hash === "#join") {
         $(".openPopout").click();
     }
-
-
-    $('body').on('click', '.ga-tracking', function () {
-        var thisCategory = $(this).attr('category');
-        var thisAction = $(this).attr('action');
-        var thisLabel = $(this).attr('label');
-        ga('send', 'event', thisCategory, thisAction, thisLabel);
-    });
 }());
